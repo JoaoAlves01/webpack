@@ -1,0 +1,10 @@
+// Bootstrap
+@use "~bootstrap/scss/bootstrap";
+  
+//Aplication
+@use 'default';
+@use 'mixins';
+@use 'footer'; 
+@use 'header';
+@use 'menu'; 
+@use 'home';

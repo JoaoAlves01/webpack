@@ -1,0 +1,91 @@
+@font-face{
+    font-display: swap;  
+    src: url("../fonts/funnel-sans/FunnelSans-Light.ttf");
+    font-size: 1.5rem;
+    font-family: "FunnelSans-Light";
+}
+ 
+@font-face{
+    font-display: swap;  
+    src: url("../fonts/funnel-sans/FunnelSans-Bold.ttf");
+    font-size: 1.5rem;
+    font-family: "FunnelSans-Bold";
+}
+
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6{  
+    text-align: left;
+    line-height: 1.5;
+    font-family: "FunnelSans-Bold";
+    color: #000;
+}
+
+span, label, a, p,
+input, select, textarea{
+    text-decoration: none;
+    text-align: left;
+    line-height: 1.5;  
+    font-family: "funnelSans-light";
+    color: #000;
+}
+
+.title {
+    text-align: center;
+    text-transform: none;
+    font-weight: bold;
+    font-family: "FunnelSans-Bold";
+    font-size: 40px;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+
+.text {
+    text-align: left;
+    text-transform: none;
+    font-weight: normal;
+    font-family: "FunnelSans-Light";
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.box__field {
+    position: relative;
+    box-sizing: border-box;
+
+    &__label {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        display: block;
+        font-size: 14px;
+        pointer-events: none;
+        line-height: 1.5;
+        font-weight: 300;
+        color: #000;
+        z-index: 1;
+    }
+
+    &--float {
+
+        .box__field__label {
+            position: absolute;
+            top: -9px;
+            left: 20px;
+            display: block;
+            font-size: 12px;
+            pointer-events: none;
+            line-height: 1.5;
+            font-weight: 300;
+            padding: 0 5px;
+            transition: .3s;
+            color: #000;
+            background: #ffff;
+            z-index: 1;
+        }
+    }
+}
